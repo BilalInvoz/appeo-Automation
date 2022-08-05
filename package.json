@@ -19,5 +19,8 @@
   "homepage": "https://github.com/BilalInvoz/appeo-Automation#readme",
   "devDependencies": {
     "cypress": "^10.3.1"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
   }
 }

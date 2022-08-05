@@ -3,11 +3,12 @@
 require ("cypress-xpath")
 
 describe('appeo testing', () =>{
-it('Login Test', () =>{
+it('initial Test', () =>{
 cy.viewport(1680,1050)
 
 //Enter Valid username and password
 cy.visit('https://appeo.invo.zone/')
+cy.wait(1200)
 cy.get('#user_email').type('123@gmail.com')
 cy.get('#user_password').type('12345678')
 cy.get('form > :nth-child(5) > button').click()
@@ -52,9 +53,9 @@ cy.wait(2200)
 cy.get('.m-1 > span').click()
 cy.get('[data-to="/users/log_out"]').click()
 cy.wait(2200)
-// cy.get('#update_company_hourly_rate') .type('10')
-cy.get(':nth-child(11) > button').click()
-cy.wait(2200)
+// cy.get('#update_company_hourly_rate') .type('12')
+// cy.get(':nth-child(11) > button').click()
+// cy.wait(2200)
 
 
 })
